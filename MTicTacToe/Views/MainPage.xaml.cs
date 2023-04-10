@@ -35,20 +35,15 @@ public partial class MainPage : ContentPage
 	}
 
 	private async void UpdateBoard(char[] board) {
-
-        //Debug.WriteLine("Starting to update...");
-        //Debug.WriteLine("btn1: " + btn1.Text);
-        //btn1.Text = "test";
-        //Debug.WriteLine(board[0].ToString()+ " <- board[0]");
-        btn1.Text = "bonkers";//board[0].ToString();
-        btn2.Text = "bonkers";//board[1].ToString();
-		btn3.Text = "bonkers";//board[2].ToString();
-		btn4.Text = "bonkers";//board[10].ToString();
-		btn5.Text = "bonkers";//board[11].ToString();
-		btn6.Text = "bonkers";//board[12].ToString();
-		btn7.Text = "bonkers";//board[20].ToString();
-		btn8.Text = "bonkers";//board[21].ToString();
-		btn9.Text = "bonkers";//board[22].ToString();
+        btn1.Text = board[0].ToString();
+        btn2.Text = board[1].ToString();
+		btn3.Text = board[2].ToString();
+		btn4.Text = board[10].ToString();
+		btn5.Text = board[11].ToString();
+		btn6.Text = board[12].ToString();
+		btn7.Text = board[20].ToString();
+		btn8.Text = board[21].ToString();
+		btn9.Text = board[22].ToString();
         Debug.WriteLine("Updated the board");
     }
 

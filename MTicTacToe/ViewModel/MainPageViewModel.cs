@@ -28,10 +28,14 @@ namespace MTicTacToe.ViewModel {
                     // Tell the client which turn it is
                     TurnOfX = turnOfX;
                     DidTurn = false;
-                    UpdateBoard.Invoke(board);
+                    MainThread.BeginInvokeOnMainThread(() => {
+                        UpdateBoard(board);
+                    });
                 });
                 hub.On("ResetFromServer", () => {
-                    Reset.Invoke();
+                    MainThread.BeginInvokeOnMainThread(() => {
+                        Reset();
+                    });
                 });
                 hub.On<char>("AssignPlayerSymbol", (symbol) => {
                     Debug.WriteLine("Got symbol:" + symbol);
