@@ -61,10 +61,16 @@
 	  <Compile Update="Views\HighscoreView.xaml.cs">
 	    <DependentUpon>HighscoreView.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\NamePage.xaml.cs">
+	    <DependentUpon>NamePage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\HighscoreView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NamePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

@@ -17,7 +17,7 @@
                 <ColumnDefinition>*</ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="btn1" AutomationId="0" Grid.Row="0" Grid.Column="0" Clicked="gridBtnPressed" Text="" FontSize="Large"></Button>
+            <Button x:Name="btn1" AutomationId="00" Grid.Row="0" Grid.Column="0" Clicked="gridBtnPressed" Text="" FontSize="Large"></Button>
             <Button x:Name="btn2" AutomationId="01" Grid.Row="0" Grid.Column="1" Clicked="gridBtnPressed" Text="" FontSize="Large"></Button>
             <Button x:Name="btn3" AutomationId="02" Grid.Row="0" Grid.Column="2" Clicked="gridBtnPressed" Text="" FontSize="Large"></Button>
             <Button x:Name="btn4" AutomationId="10" Grid.Row="1" Grid.Column="0" Clicked="gridBtnPressed" Text="" FontSize="Large"></Button>
@@ -28,6 +28,7 @@
             <Button x:Name="btn9" AutomationId="22" Grid.Row="2" Grid.Column="2" Clicked="gridBtnPressed" Text="" FontSize="Large"></Button>
             <Button Grid.Row="3" Grid.Column="0" Command="{Binding ResetBtn}" Text="Reset" FontSize="Large"></Button>
             <Button Grid.Row="3" Grid.Column="1" Command="{Binding HighscoreBtn}" Text="Highscore" FontSize="Large"></Button>
+            <Button Grid.Row="3" Grid.Column="2" Command="{Binding ConnectBtn}" Text="Connect" FontSize="Large"></Button>
         </Grid>
         
     </ScrollView>

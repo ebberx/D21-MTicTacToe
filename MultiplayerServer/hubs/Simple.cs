@@ -25,7 +25,7 @@ namespace MultiplayerServer.hubs {
 			await Clients.Others.SendAsync("AssignPlayerSymbol", "O");
 
 			await Clients.All.SendAsync("ResetFromServer");
-			await Clients.All.SendAsync("UpdateGameBoard", DataStore.Board, DataStore.PlaceX);
+			//await Clients.All.SendAsync("UpdateGameBoard", DataStore.Board, DataStore.PlaceX);
 		}
 
 		public async Task PlacePiece(char piece, int location) {

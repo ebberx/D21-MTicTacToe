@@ -15,11 +15,12 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddSingleton<MainPageViewModel>();
-		builder.Services.AddScoped<HighscoreViewModel>();
+		builder.Services.AddSingleton<HighscoreViewModel>();
 		
-		builder.Services.AddScoped<MainPage>();
-		builder.Services.AddScoped<HighscoreView>();
+		builder.Services.AddSingleton<MainPage>();
+		builder.Services.AddSingleton<HighscoreView>();
+        builder.Services.AddSingleton<NamePage>();
 
-		return builder.Build();
+        return builder.Build();
 	}
 }
